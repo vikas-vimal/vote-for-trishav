@@ -9,7 +9,7 @@ def prefix(data, count):
         data = '0'+data
     return data
 
-count = 364
+count = 2
 
 while 1==1 :
 
@@ -50,7 +50,7 @@ while 1==1 :
         cur_time = prefix(str(local_time.tm_hour),1) + '-' + prefix(str(local_time.tm_min),1) + '-' + prefix(str(local_time.tm_sec),1)
         count += 1
         status = "Done!" if(response.text.find('Thank You For Vote') != -1) else "Failed!"
-        print('<'+ cur_time +'>  '+ str(count) +'  |  '+ status)
+        print('<'+ user_name +'>  '+ str(count) +'  |  '+ status)
     except ConnectionError:
         print("Network Error! Can't Vote!")
         time.sleep(10)
