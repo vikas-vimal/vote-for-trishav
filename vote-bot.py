@@ -56,4 +56,4 @@ while 1==1 :
         time.sleep(10)
         continue
 
-    time.sleep(random.randint(100,200))
+    time.sleep(random.randint(0,100))
